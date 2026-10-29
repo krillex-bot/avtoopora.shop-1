@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const categories = [
   { title: "Автозапчасти", description: "Подбор деталей под ваш автомобиль", icon: "⚙️" },
   { title: "Расходные материалы", description: "Всё для регулярного обслуживания", icon: "🛢️" },
@@ -25,7 +27,7 @@ export default function Home() {
       </section>
       <section className="section categories" id="catalog">
         <div className="section-heading"><div><p className="eyebrow">01 / НАПРАВЛЕНИЯ</p><h2>Что вы ищете?</h2></div><p>Основные направления будущего каталога. Конкретные товары и наличие будут добавлены отдельно.</p></div>
-        <div className="category-grid">{categories.map((item,i)=><article className="category-card" key={item.title}><div className="category-top"><span className="category-icon" aria-hidden="true">{item.icon}</span><span className="category-number">0{i+1}</span></div><h3>{item.title}</h3><p>{item.description}</p><span className="category-arrow" aria-hidden="true">↗</span></article>)}</div>
+        <div className="category-grid">{categories.map((item,i)=><Link href="/catalog" className="category-card" key={item.title} aria-label={`Перейти в каталог: ${item.title}`}><div className="category-top"><span className="category-icon" aria-hidden="true">{item.icon}</span><span className="category-number">0{i+1}</span></div><h3>{item.title}</h3><p>{item.description}</p><span className="category-arrow" aria-hidden="true">↗</span></Link>)}</div>
       </section>
       <section className="section feature" id="advantages"><p className="eyebrow">02 / НАШ ПОДХОД</p><h2>Понятный поиск.<br/><span>Уверенный выбор.</span></h2><div className="feature-grid"><div><strong>01</strong><h3>Начните с задачи</h3><p>Выберите нужную категорию товаров или опишите, что требуется вашему автомобилю.</p></div><div><strong>02</strong><h3>Уточните совместимость</h3><p>При подборе деталей всегда проверяйте марку, модель, год выпуска и характеристики автомобиля.</p></div><div><strong>03</strong><h3>Проверьте условия</h3><p>Наличие, стоимость, доставка и условия покупки будут показаны после запуска каталога.</p></div></div></section>
       <section className="contact" id="contact"><div><p className="eyebrow">03 / НА СВЯЗИ</p><h2>Нужен конкретный товар?</h2><p>Контактные данные и форма обращения будут подключены перед публикацией магазина.</p></div><div className="contact-symbol" aria-hidden="true">↗</div></section>

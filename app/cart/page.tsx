@@ -1,0 +1,1 @@
+import type { Metadata } from "next"; import { Shop } from "../components/shop"; export const metadata: Metadata = {title:"Корзина | АвтоОпора",description:"Корзина и черновик заявки АвтоОпора"}; export default function CartPage(){return <Shop mode="cart" />}

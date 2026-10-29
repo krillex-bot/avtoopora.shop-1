@@ -9,16 +9,16 @@ export default function Home() {
       <header className="site-header">
         <a href="/" className="logo" aria-label="АвтоОпора — главная"><span className="logo-mark">А</span>АвтоОпора</a>
         <nav aria-label="Основная навигация">
-          <a href="#catalog">Каталог</a><a href="#advantages">Почему мы</a><a href="#contact">Связаться</a>
+          <a href="/catalog">Каталог</a><a href="#advantages">Почему мы</a><a href="#contact">Связаться</a>
         </nav>
-        <a className="header-link" href="#contact">Помощь с подбором ↗</a>
+        <a className="header-link" href="/cart">Моя корзина ↗</a>
       </header>
       <section className="hero">
         <div className="hero-content">
           <p className="eyebrow"><span className="status-dot" /> Поддержка вашего автомобиля</p>
           <h1>Надёжная опора<br /><span>для каждого километра.</span></h1>
           <p className="hero-description">АвтоОпора — пространство для поиска автотоваров и подбора решений под ваш автомобиль. Начните с нужной категории.</p>
-          <div className="actions"><a className="button-primary" href="#catalog">Смотреть категории <span>↗</span></a><a className="button-secondary" href="#contact">Нужна помощь? →</a></div>
+          <div className="actions"><a className="button-primary" href="/catalog">Смотреть категории <span>↗</span></a><a className="button-secondary" href="/cart">Перейти в корзину →</a></div>
           <div className="hero-note">Подбор ассортимента и оформление заказов появятся здесь после подключения каталога.</div>
         </div>
         <div className="hero-art" aria-hidden="true"><div className="art-ring ring-one" /><div className="art-ring ring-two" /><div className="art-label">AUTO<br/>OPORA<span>●</span></div><div className="art-caption">ДВИЖЕНИЕ НАЧИНАЕТСЯ С УВЕРЕННОСТИ</div></div>
